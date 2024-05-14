@@ -21,6 +21,20 @@ module.exports = {
       black: colors.black,
       white: colors.white,
       slate: colors.slate,
+      "wild-strawberry": {
+        50: "#fff0fa",
+        100: "#ffe3f8",
+        200: "#ffc6f0",
+        300: "#ff98e2",
+        400: "#ff58cc",
+        500: "#ff27b4",
+        600: "#ff0694",
+        700: "#df0073",
+        800: "#b8005f",
+        900: "#980352",
+        950: "#5f002d",
+      },
+
       gray: {
         50: "#FAFAFC",
         100: "#E9E9EC",
