@@ -4,10 +4,14 @@ import Container from "./Container.astro";
 ---
 
 <div class="relative" id="home">
-  <Cloud positionX="-space-x-52" opacity="opacity-40" darkOpacity="dark:opacity-20"/>
+  <Cloud
+    positionX="-space-x-52"
+    opacity="opacity-40"
+    darkOpacity="dark:opacity-20"
+  />
   <Container>
-    <div class="relative pt-48 ml-auto">
-       <div class="lg:w-2/3 text-center mx-auto md:text-left md:mx-0">
+    <div class="relative flex pt-48 ml-auto">
+      <div class="lg:w-2/3 text-center mx-auto md:text-left md:mx-0">
         <h1
           class="text-gray-900 dark:text-white font-bold text-5xl md:text-6xl xl:text-7xl"
         >
@@ -19,7 +23,9 @@ import Container from "./Container.astro";
             class="text-primary font-semibold">necesitas una página web</span
           >
         </p>
-        <div class="mt-16 flex flex-wrap justify-center gap-y-4 gap-x-6 md:justify-normal">
+        <div
+          class="mt-16 flex flex-wrap justify-center gap-y-4 gap-x-6 md:justify-normal"
+        >
           <a
             href="#"
             class="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
@@ -38,6 +44,13 @@ import Container from "./Container.astro";
             >
           </a>
         </div>
+      </div>
+      <div class="w-[500px] hidden lg:flex h-[400px]">
+        <img
+          class="w-full h-full object-center object-contain"
+          src="/public/images/hero.png"
+          alt=""
+        />
       </div>
     </div>
   </Container>
