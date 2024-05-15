@@ -1,19 +1,64 @@
 ---
+import Index from "../pages/index.astro";
 import CardServices from "./CardServices.astro";
 import Container from "./Container.astro";
 ---
 
 <Container>
   <div class="mb-7 max-w-xl text-center md:text-left">
-    <h3 class="text-white text-3xl md:text-6xl font-bold mb-3">Nuestros servicios</h3>
-    <p class="text-slate-300 text-md text-left">Contamos con una amplia <span class="text-semibold text-primary">variedad de servicios</span>. Elegí el que mas se adapte a tus necesidades y te ayudamos a <span class="text-semibold text-primary">hacerlo realidad</span>.</p>
+    <h3 class="text-white text-3xl md:text-6xl font-bold mb-3">
+      Nuestros servicios
+    </h3>
+    <p class="text-slate-300 text-md text-left">
+      Contamos con una amplia <span class="text-semibold text-primary"
+        >variedad de servicios</span
+      >. Elegí el que mas se adapte a tus necesidades y te ayudamos a <span
+        class="text-semibold text-primary">hacerlo realidad</span
+      >.
+    </p>
   </div>
-  <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-    <CardServices title="Páginas web" text="Diseñamos y desarrollamos sitios web ideales y profesionales para negocios, personales o corporativos, sin límites." src="https://cdn.lordicon.com/rehjpyyh.json" state="morph-sea"/>
-    <CardServices title="Tiendas online" text="Creamamos tu tienda online profesional y autogestionable, con carrito de compras y diseño completamente personalizado."src="https://cdn.lordicon.com/odavpkmb.json" state="morph-sea" />
-    <CardServices title="Landing page" text="Diseñamos tu landing page atractiva y efectiva para promocionar tu producto, servicio o marca de manera impactante y persuasiva." src="https://cdn.lordicon.com/wzwygmng.json" state="morph-sea" />
-    <CardServices title="Mantenimiento web" text="Nos encargamos del mantenimiento web completo para que puedas concentrarte en tu negocio sin preocupaciones." src="https://cdn.lordicon.com/wuvorxbv.json" state="in-dynamic" />
-    <CardServices title="Todo incluido" text="Nuestro paquete todo incluido cubre dominio y hosting, proporcionándote una solución completa y sin complicaciones para tu presencia en línea" src="https://cdn.lordicon.com/vcuhguff.json" state="hover-wink" />
-    <CardServices title="Redes sociales" text="Agregamos y vinculamos tus redes sociales para ampliar tu alcance y conectar con tu audiencia de manera efectiva." src="https://cdn.lordicon.com/wzrwaorf.json" state="hover-conversation-alt" />
+  <div class="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+    <CardServices
+      position={0}
+      title="Páginas web"
+      text="Diseñamos y desarrollamos sitios web ideales y profesionales para negocios, personales o corporativos, sin límites."
+      src="https://cdn.lordicon.com/rehjpyyh.json"
+      state="morph-sea"
+    />
+    <CardServices
+      position={1}
+      title="Tiendas online"
+      text="Creamamos tu tienda online profesional y autogestionable, con carrito de compras y diseño completamente personalizado."
+      src="https://cdn.lordicon.com/odavpkmb.json"
+      state="morph-sea"
+    />
+    <CardServices
+      position={2}
+      title="Landing page"
+      text="Diseñamos tu landing page atractiva y efectiva para promocionar tu producto, servicio o marca de manera impactante y persuasiva."
+      src="https://cdn.lordicon.com/wzwygmng.json"
+      state="morph-sea"
+    />
+    <CardServices
+      position={3}
+      title="Mantenimiento web"
+      text="Nos encargamos del mantenimiento web completo para que puedas concentrarte en tu negocio sin preocupaciones."
+      src="https://cdn.lordicon.com/wuvorxbv.json"
+      state="in-dynamic"
+    />
+    <CardServices
+      position={4}
+      title="Todo incluido"
+      text="Nuestro paquete todo incluido cubre dominio y hosting, proporcionándote una solución completa y sin complicaciones para tu presencia en línea"
+      src="https://cdn.lordicon.com/vcuhguff.json"
+      state="hover-wink"
+    />
+    <CardServices
+      position={5}
+      title="Redes sociales"
+      text="Agregamos y vinculamos tus redes sociales para ampliar tu alcance y conectar con tu audiencia de manera efectiva."
+      src="https://cdn.lordicon.com/wzrwaorf.json"
+      state="hover-conversation-alt"
+    />
   </div>
 </Container>
