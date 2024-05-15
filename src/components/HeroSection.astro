@@ -1,6 +1,7 @@
 ---
 import Cloud from "./Cloud.astro";
 import Container from "./Container.astro";
+import SocialLinks from "./SocialLinks.astro";
 ---
 
 <div class="relative" id="home">
@@ -23,6 +24,9 @@ import Container from "./Container.astro";
             class="text-primary font-semibold">necesitas una página web</span
           >
         </p>
+        <div class="mt-10">
+          <SocialLinks />
+        </div>
         <div
           class="mt-16 flex flex-wrap justify-center gap-y-4 gap-x-6 md:justify-normal"
         >
@@ -48,7 +52,7 @@ import Container from "./Container.astro";
       <div class="w-[500px] hidden lg:flex h-[400px]">
         <img
           class="w-full h-full object-center object-contain"
-          src="/public/images/hero.png"
+          src="/images/hero.png"
           alt=""
         />
       </div>
