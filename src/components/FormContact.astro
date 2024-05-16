@@ -15,7 +15,7 @@ import MdiInstagram from "./icons/MdiInstagram.astro";
       <div class="flex items-end ">
         <div class="items-end justify-center lg:w-1/2 hidden lg:flex relative">
           <img class="w-[500px] relative z-10" src="/images/form.png" alt="" />
-          <div class="absolute w-[500px] h-[500px] rounded-full bg-primary z-0 left-[-30px] drop-shadow-2xl"></div>
+          <div class="absolute w-[500px] h-[500px] rounded-full bg-primary z-0 left-[-30px] drop-shadow-2xl bg-gradient-to-r from-wild-strawberry-700 via-wild-strawberry-600 to-wild-strawberry-900"></div>
         </div>
         <div class="lg:w-1/2 mx-auto">
           <div class="flex flex-col w-full mb-6 text-center">
@@ -50,6 +50,7 @@ import MdiInstagram from "./icons/MdiInstagram.astro";
                   type="text"
                   id="name"
                   name="name"
+                  placeholder="Nombre"
                   class="w-full bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 />
               </div>
@@ -63,6 +64,7 @@ import MdiInstagram from "./icons/MdiInstagram.astro";
                   type="email"
                   id="email"
                   name="email"
+                  placeholder="Email"
                   class="w-full bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 />
               </div>
@@ -75,6 +77,7 @@ import MdiInstagram from "./icons/MdiInstagram.astro";
                 <textarea
                   id="message"
                   name="message"
+                  placeholder="Mensaje (cuentanos acerca de su proyecto)"
                   class="w-full bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                 ></textarea>
               </div>

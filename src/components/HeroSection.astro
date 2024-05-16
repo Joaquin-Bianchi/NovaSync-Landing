@@ -49,12 +49,13 @@ import SocialLinks from "./SocialLinks.astro";
           </a>
         </div>
       </div>
-      <div class="w-[500px] hidden lg:flex h-[400px]">
+      <div class="w-[500px] hidden lg:flex h-[400px] relative">
         <img
-          class="w-full h-full object-center object-contain"
+          class="w-full h-full object-center object-contain z-10"
           src="/images/hero.png"
           alt=""
         />
+        <div class="absolute w-[550px] h-[550px] left-[-50px] top-[-62px] rounded-full bg-primary z-0 drop-shadow-2xl bg-gradient-to-r from-wild-strawberry-700 via-wild-strawberry-600 to-wild-strawberry-900"></div>
       </div>
     </div>
   </Container>
