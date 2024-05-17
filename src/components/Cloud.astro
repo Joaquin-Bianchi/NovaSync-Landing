@@ -1,26 +1,20 @@
 ---
 interface Props {
-    positionX: string;
-    opacity: string;
-    darkOpacity: string;
+  positionX: string;
+  opacity: string;
 }
 
-const { positionX, opacity, darkOpacity } = Astro.props;
+const { positionX, opacity } = Astro.props;
 ---
-
 
 <div>
   <div
     aria-hidden="true"
-    class=`absolute inset-0 grid grid-cols-2 ${positionX} ${opacity} ${darkOpacity}`
+    class=`absolute inset-0 grid grid-cols-2 ${positionX} ${opacity} `
   >
-    <div
-      class="blur-[106px] h-56 bg-gradient-to-br from-[#101641] dark:from-primary dark:to-pink-900 to-blue-500"
-    >
+    <div class="blur-[106px] h-56 bg-gradient-to-br from-primary to-pink-900">
     </div>
-    <div
-      class="blur-[106px] h-32 bg-gradient-to-r from-rose-200 to-sky-300 dark:to-indigo-600"
-    >
+    <div class="blur-[106px] h-32 bg-gradient-to-r from-rose-200 to-indigo-600">
     </div>
   </div>
 </div>
