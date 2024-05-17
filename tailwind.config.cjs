@@ -4,6 +4,11 @@ module.exports = {
   presets: [],
   darkMode: "media", // or 'class'
   theme: {
+    extend: {
+      animation: {
+        "spin-slow": "spin 5s linear infinite",
+      },
+    },
     screens: {
       sm: "640px",
       md: "768px",

@@ -1,4 +1,5 @@
 ---
+import Circle from "./Circle.astro";
 import Cloud from "./Cloud.astro";
 import Container from "./Container.astro";
 import SocialLinks from "./SocialLinks.astro";
@@ -13,9 +14,7 @@ import SocialLinks from "./SocialLinks.astro";
   <Container>
     <div class="relative flex pt-48 ml-auto">
       <div class="lg:w-2/3 text-center mx-auto md:text-left md:mx-0">
-        <h1
-          class="text-title font-bold text-5xl md:text-6xl xl:text-7xl"
-        >
+        <h1 class="text-title font-bold text-5xl md:text-6xl xl:text-7xl">
           Agencia de desarrollo de software
         </h1>
         <p class="mt-8 text-text md:w-10/12">
@@ -42,8 +41,7 @@ import SocialLinks from "./SocialLinks.astro";
             href="/#workingprocess"
             class="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:border before:border-transparent before:bg-primary/10 before:bg-gradient-to-b before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800 sm:w-max"
           >
-            <span
-              class="relative text-base font-semibold text-white"
+            <span class="relative text-base font-semibold text-white"
               >Saber más</span
             >
           </a>
@@ -55,7 +53,11 @@ import SocialLinks from "./SocialLinks.astro";
           src="/images/hero.png"
           alt=""
         />
-        <div class="absolute w-[550px] h-[550px] left-[-50px] top-[-62px] rounded-full bg-primary z-0 drop-shadow-2xl bg-gradient-to-r from-wild-strawberry-700 via-wild-strawberry-600 to-wild-strawberry-900"></div>
+        <div
+          class="absolute w-[558px] h-[558px] left-[-50px] top-[-62px] rounded-full bg-primary z-0 drop-shadow-2xl bg-gradient-to-r from-wild-strawberry-700 via-wild-strawberry-600 to-wild-strawberry-900"
+        >
+          <Circle />
+        </div>
       </div>
     </div>
   </Container>
