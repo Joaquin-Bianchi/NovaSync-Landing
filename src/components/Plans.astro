@@ -1,0 +1,81 @@
+---
+import Container from "./Container.astro";
+---
+
+<Container>
+  <section class="text-text body-font">
+    <div class="">
+      <p class="text-primary font-semibold text-center">Nuestos planes</p>
+      <h4 class="text-3xl text-center text-title md:text-6xl font-bold">
+        Elegí tu plan
+      </h4>
+      <p class="mt-2 text-text md:text-center md:mt-5">
+        Contamos con una alta variedad de planes. Elegí el que más se adapte a
+        tus necesidades y <span class="font-semibold text-primary"
+          >contactate con nosotros</span
+        >.
+      </p>
+    </div>
+    <div class="container mt-10 mx-auto">
+      <div class="flex flex-wrap -m-4">
+        <!-- Card Página Web -->
+        <div class="p-4 lg:w-1/2">
+          <div
+            class="h-full px-8 pt-14 pb-14 overflow-hidden text-center relative flex flex-col justify-between rounded-3xl  
+            border-gray-700 bg-[#070917] bg-opacity-50 hover:bg-opacity-80 ease-in-out transition-all duration-300 cursor-default border-t-2 border-l-2 border-l-primary border-t-primary"
+          >
+            <div class="w-full flex justify-center h-[200px] mb-2">
+              <img src="/images/pagina-web.png" alt="pagina-web" class="object-contain"/>
+            </div>
+            <h1
+              class="title-font sm:text-2xl text-xl font-bold text-title mb-3"
+            >
+              Páginas Web
+            </h1>
+            <p class="leading-relaxed mb-3 md:mb-5 font-medium">
+              Creamos cualquier tipo de página web, tanto como para uso
+              personal, comercial o corporativa. La idea que tengas la hacemos
+              realidad.
+            </p>
+            <a
+                href="/pagina-web"
+                class="m-auto my-0 relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
+              >
+                <span class="relative text-base font-semibold text-white"
+                  >Ver planes</span
+                >
+              </a>
+          </div>
+        </div>
+
+        <!-- Card Tienda Online-->
+        <div class="p-4 lg:w-1/2">
+            <div
+              class="h-full px-8 pt-14 pb-14 overflow-hidden text-center relative flex flex-col justify-between rounded-3xl  
+              border-gray-700 bg-[#ffffff] hover:bg-opacity-80 bg-opacity-90 ease-in-out transition-all duration-300 cursor-default border-b-2 border-r-2 border-b-primary border-r-primary"
+            >
+              <div class="w-full flex justify-center h-[200px] mb-2">
+                <img src="/images/tienda-online.png" alt="pagina-web" class="object-contain"/>
+              </div>
+              <h1
+                class="title-font sm:text-2xl text-xl font-bold text-secondary mb-3"
+              >
+                Tiendas Online
+              </h1>
+              <p class="leading-relaxed mb-3 md:mb-5 font-medium text-secondary">
+                Te ayudamos a potenciar tu marca y/o negocio con una presencia online elegante, profesional y dinamica, no esperes más.
+              </p>
+              <a
+                href="/pagina-web"
+                class="m-auto relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
+              >
+                <span class="relative text-base font-semibold text-white"
+                  >Ver planes</span
+                >
+              </a>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+</Container>
